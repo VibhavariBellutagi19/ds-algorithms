@@ -5,10 +5,12 @@
 # Time complexity: O(n^2)
 
 def search_in_2D(arr,target):
+    ans = [[0] * 1] * 1
     for row in range(len(arr)):
         for col in range(len(arr[row])):
             if arr[row][col] == target:
-                return ans.append([row,col])
+                ans[0][0] = row,col
+                return ans
     ans[0][0] = -1,-1
     return ans
 
