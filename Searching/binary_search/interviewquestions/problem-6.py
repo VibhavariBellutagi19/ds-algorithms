@@ -10,18 +10,17 @@ def find_moutain(arr):
     start = 0
     end = len(arr) - 1
 
-    while(start <= end):
+    while(start < end):
         mid = start + (end-start)//2
         if arr[mid] > arr[mid + 1]:
             end = mid
-        elif arr[mid] < arr[mid + 1]:
-            start = mid
-            ans = start
-    return mid
-        
+        else:
+            start = mid + 1
+    return end
+        # breaking loop will be s < e, coz at the end, start == end
 
 def main():
-    arr = [0,2,1,0]
+    arr = [0,10,5,2]
 
     res = find_moutain(arr)
     print(res)
