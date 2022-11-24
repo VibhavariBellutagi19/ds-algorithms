@@ -4,8 +4,7 @@
 # 2. find all numbers >= target
 # 3. find the smallest among numbers >= target
 # Output: 
-# Input: [2,3,5,9,14,16,18]
-# Time complexity: 
+# Input: [2,3,5,9,14,16,18] 
 
 def ceil_number(arr,target,start,end):
     
