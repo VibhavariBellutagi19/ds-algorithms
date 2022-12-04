@@ -1,8 +1,10 @@
-# Introduction: Binary search is used for sorted array
-# tricks: 
+# Introduction: Binary search is used for sorted array. the matix is sorted row wise and col wise
+# Search something try to see how you can reduce the search space
+# tricks: eleminate rows and columns
+# start searching from frist row and last column ( lower bound = row 0 and upper bound = last col)
 # Input: 
 # Output: 
-# Time complexity: 
+# Time complexity: N rows + N cols = O(2N) = O(N)
 
 def row_col_binary_search(arr,target):
     row = 0
@@ -16,8 +18,6 @@ def row_col_binary_search(arr,target):
         else:
             row +=1
     return [-1, -1]
-
-
 
 
 def main():
